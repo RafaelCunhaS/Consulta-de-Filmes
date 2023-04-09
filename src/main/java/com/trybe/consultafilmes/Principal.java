@@ -1,6 +1,6 @@
 package com.trybe.consultafilmes;
 
-import java.util.Set;
+import java.util.List;
 
 public class Principal {
 
@@ -11,7 +11,7 @@ public class Principal {
    */
   public static void main(String[] args) {
     Consultas consultas = new Consultas(Filmes.todos());
-    Set<String> resultados = consultas.atoresQueInterpretaramSiProprios();
+    List<Filme> resultados = consultas.filmesEmQuePeloMenosUmDiretorAtuouMaisRecentesPrimeiro();
     System.out.println(resultados);
   }
 }
